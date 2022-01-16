@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Font/fontawesome-free-5.15.4-web/css/all.css">
+
+    <title>Truyen</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="menu1">
+            <ul class="menu2 mb">
+                <li><a href=""><i class="fas fa-home"></i>Trang chủ</a></li>
+                <li><a href=""><i class="fas fa-tasks"></i>Truyện tranh</a>
+                    <ul class="mega-menu1">
+                        <li><a href=""> <i class="fas fa-star"></i><strong>Mới cập nhật</strong></a></li>
+                        <li><a href=""> <i class="fas fa-star"></i><strong>Bảng xếp hạng</strong></a></li>
+                        <li><a href=""> <i class="fas fa-star"></i><strong>Truyện mới </strong></a></li>
+                        <li><a href=""> <i class="fas fa-star"></i><strong>Đã hoàn thành</strong></a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-list"></i>Thể loại</a>
+                    <ul class="mega-menu2">
+                        <li><a href="">Tất cả</a></li>
+                        <li><a href="">Action</a></li>
+                        <li><a href="">Drama</a></li>
+                        <li><a href="">Adventure</a></li>
+                        <br>
+                        <li><a href="">Anime</a></li>
+                        <li><a href="">Báo thù</a></li>
+                        <li><a href="">Comedy</a></li>
+                        <li><a href="">Comic</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i class="fas fa-history"></i>Lịch sử</a></li>
+                <li><a href=""><i class="fas fa-thumbtack"></i>Theo dõi</a></li>
+                <li><a href=""><i class="fas fa-random"></i>Ngẫu nhiên</a></li>
+            </ul>
+        </div>
+        <div class="search-box">
+            <a href="" class="search-btx">
+                <i class="fas fa-search"></i>
+            </a>
+            <input type="text" class="search-txt" placeholder="Tìm kiếm">
+        </div>
+
+        <!-- <div class="header-right-user">
+            <div id="avatar-user">
+                <img width="4%" height="1%" src="images/avatar.jpg" alt="Đăng nhập">
+            </div>
+            <p class="text-user d-md-block d-none">
+                Đăng nhập
+            </p>
+        </div> -->
+        <div class="advertise-banner">
+            <div class="container">
+                <div class="banner-img">
+                    <img src="/images/banner2022.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- định nghĩa một bài viết, một nội dung riêng biệt -->
+        <article class="ListManga">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <nav class="nav-list-story">
+                            <div class="nav" id="nav-tab" role="tablist">
+                                <button class="nav-item active"> Truyện tranh</button>
+                                <button class="nav-item">Ngẫu nhiên</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <!--Star tab truyện tranh -->
+                            <div class="tab-pane" id="tab1" role="tabpanel1">
+                                <div class="tab1-content">
+                                    <!--Truyện hot đề cử-->
+                                    <section class="story-category category-feature">
+                                        <div class="heading-cate">
+                                            <h3 class="cat-title">
+                                                <span> <i class="fas fa-star"></i> </span>
+                                                <span style=" font-size: 20px;"> <strong>Truyện hot</strong> </span>
+                                            </h3>
+                                        </div>
+                                        <div class="row p-0 gutter-15">
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="Truyen/Chí tôn trời hoang/Chap 1/1.jpg" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/ChiTonTroiHoang.jpg"
+                                                                alt="Chí tôn trời hoang">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Chí Tôn Trời Hoang</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="###" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/chung-cuc-dau-la.jpg"
+                                                                alt="chung-cuc-dau-la">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Chung cực đấu la</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/van-gioi-tien-tung.jpg"
+                                                                alt="Vạn giới tiên van-gioi-tien-tung">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Vạn giới tiên tung</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/quang-chi-tu.jpg" alt="Quang Chi Tử">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Quang Chi Tử</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/dai-chua-te.jpg" alt="Đại chúa tể">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Đại chúa tể</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/vo-luyen-dinh-phong.jpg"
+                                                                alt="Võ luyện đỉnh phong">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Võ luyện đỉnh phong</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/toan-cau-cao-vo.jpg" alt="Toàn cầu cao võ">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Toàn cầu cao võ</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 gy-4">
+                                                <div class="story-item" itemtype="http://schema.org/Book" itemscope=>
+                                                    <a href="" class="story-img">
+                                                        <div class="main-img c-img">
+                                                            <img src="images/tinh-vo-than-quyet.jpg"
+                                                                alt="Tinh võ thần quyết">
+                                                        </div>
+                                                        <div class="read-story-btn">
+                                                            <p class="eyes-text">
+                                                                <i class="far fa-eye"></i>
+                                                                <span style="margin-left: 5px;"> Đọc truyện </span>
+                                                            </p>
+                                                        </div>
+                                                    </a>
+                                                    <div class="story-desc">
+                                                        <h4 class="story-name">
+                                                            <a href="###">Tinh võ thần quyết</a>
+                                                        </h4>
+                                                        <div class="rate">
+                                                            <div class="start">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="far fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-story">'
+                                                            <div class="chap">
+                                                                <a style="text-decoration: none;" href="">Chap 1</a>
+                                                            </div>
+                                                            <div>
+                                                                <time class="timeago" datetime="2022-01-15T08:10:56Z"
+                                                                    title="2022-01-15T08:10:56Z">10 Giờ trước</time>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-lg-5 ps-md-3">
+                        <aside>
+                            <section style="width: 357px; height: 157px;" class="sidebar-fanpage">
+                                <h4 class="sidebar-heading">
+                                    <span>
+                                        <strong>Liên Hệ</strong>
+                                    </span>
+                                </h4>
+                                <div class="yt" style="display: flex; padding: 10px;">
+                                    <a href="">
+                                        <img style="width: 64px; margin-top: 50px; position: relative; left: -20px;"
+                                            class="ytb" src="images/youtube.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img style="width: 64px; margin-top: 50px; position: relative; left:-10px;"
+                                            src="images/facebook.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img style="width: 64px; margin-top: 50px; position: relative; left:5px;"
+                                            src="images/tiktok.png" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img style="width: 64px; margin-top: 50px; position: relative; left:20px;"
+                                            src="images/INS1.jpg" alt="">
+                                    </a>
+                                    <a href="">
+                                        <img style="width: 64px; margin-top: 50px; position: relative; left:30px;"
+                                            src="images/TLG.jpg" alt="">
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="sidebar-top-story">
+                                <nav class="menu-top-story">
+                                    <div class="nav" id="nav-tab" role="tablist" style="height: 50px;">
+                                        <button class="nav-item active" data-bs-toggle="tab" data-bs-targle="#tabsb-1"
+                                            type="button" role="tab" aria-selected="true">
+                                            Top truyện trong
+                                            <br>
+                                            ngày
+                                        </button>
+                                        <button class="nav-item" data-bs-toggle="tab" data-bs-targle="#tabsb-2"
+                                            type="button" role="tab" aria-selected="false">
+                                            Top truyện trong
+                                            <br>
+                                            tuần
+                                        </button>
+                                    </div>
+                                </nav>
+                                <div class="tab-sb-content tab-content1">
+                                    <!-- Top truyện tranh -->
+                                    <div class="tab-pane face show active" id="tabsb-1" role="tabpanel">
+                                        <div style="width: 357.5px; height: 834px;" class="tab-sb1-content">
+                                            <div class="list-top-story">
+                                                <div class="top-story-item">
+                                                    <p class="top-stt"> 1 </p>
+                                                    <div class="story-item1">
+                                                        <div class="story-img">
+                                                            <a href="" class="c-img1 scale-hover">
+                                                                <img src="images/bach-luyen-thanh-than.jpg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="story-desc">
+                                                            <h4 class="name">
+                                                                <a style="color: black" href=""> <strong>Bách Luyện Thành Thần</strong> </a>
+                                                            </h4>
+                                                            <div class="des">
+                                                                <a style="color: black" href="" class="chap">Chap 1</a>
+                                                                <p class="view">
+                                                                    <i class="far fa-eye"></i>
+                                                                    <span>15035659</span>
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="top-story-item">
+                                                    <p class="top-stt"> 2 </p>
+                                                    <div class="story-item2">
+                                                        <div class="story-img">
+                                                            <a href="" class="c-img1 scale-hover">
+                                                                <img src="images/yeu-than-ky.jpg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="story-desc">
+                                                            <h4 class="name">
+                                                                <a style="color: black" href=""> <strong>Yêu Thần Kí</strong> </a>
+                                                            </h4>
+                                                            <div class="des">
+                                                                <a  href="" class="chap">Chap 1</a>
+                                                                <p class="view">
+                                                                    <i class="far fa-eye"></i>
+                                                                    <span>14365239</span>
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="top-story-item">
+                                                    <p class="top-stt"> 3 </p>
+                                                    <div class="story-item2">
+                                                        <div class="story-img">
+                                                            <a href="" class="c-img1 scale-hover">
+                                                                <img src="images/yeu-than-ky.jpg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="story-desc">
+                                                            <h4 class="name">
+                                                                <a style="color: black" href=""> <strong>Yêu Thần Kí</strong> </a>
+                                                            </h4>
+                                                            <div class="des">
+                                                                <a  href="" class="chap">Chap 1</a>
+                                                                <p class="view">
+                                                                    <i class="far fa-eye"></i>
+                                                                    <span>14365239</span>
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>
